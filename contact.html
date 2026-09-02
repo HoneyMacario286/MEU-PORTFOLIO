@@ -1,1 +1,513 @@
 
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Página de contacto do portfólio pessoal de Honey Macario">
+
+    <title>Contacto | Honey Macario</title>
+
+    <!-- Ligação aos ficheiros CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABEÇALHO
+         ========================= -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <a href="index.html">
+                    Honey Macario
+                </a>
+
+            </div>
+
+
+            <!-- Menu de navegação -->
+
+            <nav class="main-nav">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio.html">
+                            Projetos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="hobbies.html">
+                            Hobbies
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="active">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+         ========================= -->
+
+    <main>
+
+
+        <!-- Título da página -->
+
+        <section class="page-title">
+
+            <div class="container">
+
+                <p class="subtitle">
+                    Vamos conversar
+                </p>
+
+                <h1>
+                    Entre em contacto
+                </h1>
+
+                <p>
+                    Se quiser entrar em contacto comigo,
+                    pode utilizar os dados abaixo ou
+                    preencher o formulário.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             MEUS DADOS
+             ========================= -->
+
+        <section class="contact-info">
+
+            <div class="container">
+
+                <h2>
+                    Os meus dados
+                </h2>
+
+                <div class="contact-cards">
+
+
+                    <article class="contact-card">
+
+                        <h3>
+                            Nome
+                        </h3>
+
+                        <p>
+                            Honey Macario
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="contact-card">
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            honeymacario5@gmail.com
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="contact-card">
+
+                        <h3>
+                            Contacto
+                        </h3>
+
+                        <p>
+                            877423520
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="contact-card">
+
+                        <h3>
+                            Redes sociais
+                        </h3>
+
+                        <p>
+                            Não possuo contas nas redes sociais.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FORMULÁRIO
+             ========================= -->
+
+        <section class="contact-form-section">
+
+            <div class="container">
+
+
+                <div class="form-introduction">
+
+                    <h2>
+                        Formulário de contacto
+                    </h2>
+
+                    <p>
+                        Preencha os campos abaixo para
+                        enviar uma mensagem.
+                    </p>
+
+                </div>
+
+
+
+                <form action="#" method="post">
+
+
+                    <!-- =========================
+                         DADOS DO VISITANTE
+                         ========================= -->
+
+                    <fieldset>
+
+                        <legend>
+                            Dados do visitante
+                        </legend>
+
+
+                        <!-- Nome -->
+
+                        <label for="nome">
+                            Nome completo:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite o seu nome"
+                            minlength="3"
+                            maxlength="80"
+                            required
+                        >
+
+
+
+                        <!-- Email -->
+
+                        <label for="email">
+                            Email:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemplo@email.com"
+                            required
+                        >
+
+
+
+                        <!-- Telefone -->
+
+                        <label for="telefone">
+                            Contacto:
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="Digite o seu contacto"
+                            pattern="[0-9]{9}"
+                            title="Digite um número com 9 algarismos"
+                            required
+                        >
+
+
+
+                        <!-- Data -->
+
+                        <label for="data">
+                            Data de contacto:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            name="data"
+                            required
+                        >
+
+                    </fieldset>
+
+
+
+                    <!-- =========================
+                         INFORMAÇÕES DA MENSAGEM
+                         ========================= -->
+
+                    <fieldset>
+
+                        <legend>
+                            Informações da mensagem
+                        </legend>
+
+
+
+                        <!-- Assunto -->
+
+                        <label for="assunto">
+                            Assunto:
+                        </label>
+
+                        <select
+                            id="assunto"
+                            name="assunto"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione uma opção
+                            </option>
+
+                            <option value="projeto">
+                                Sobre um projeto
+                            </option>
+
+                            <option value="estudos">
+                                Sobre os meus estudos
+                            </option>
+
+                            <option value="contacto">
+                                Contacto pessoal
+                            </option>
+
+                            <option value="outro">
+                                Outro assunto
+                            </option>
+
+                        </select>
+
+
+
+                        <!-- Idade -->
+
+                        <label for="idade">
+                            Idade:
+                        </label>
+
+                        <input
+                            type="number"
+                            id="idade"
+                            name="idade"
+                            min="10"
+                            max="100"
+                            placeholder="Digite a sua idade"
+                        >
+
+
+
+                        <!-- Radio -->
+
+                        <p class="form-question">
+                            Como prefere ser contactado?
+                        </p>
+
+
+                        <div class="radio-group">
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="forma_contacto"
+                                    value="email"
+                                    required
+                                >
+
+                                Email
+
+                            </label>
+
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="forma_contacto"
+                                    value="telefone"
+                                >
+
+                                Telefone
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- Mensagem -->
+
+                        <label for="mensagem">
+                            Mensagem:
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Escreva a sua mensagem..."
+                            required
+                        ></textarea>
+
+
+
+                        <!-- Upload -->
+
+                        <label for="ficheiro">
+                            Anexar ficheiro (opcional):
+                        </label>
+
+                        <input
+                            type="file"
+                            id="ficheiro"
+                            name="ficheiro"
+                            accept=".pdf,.jpg,.jpeg,.png"
+                        >
+
+
+
+                        <!-- Checkbox -->
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                name="confirmacao"
+                                required
+                            >
+
+                            Confirmo que as informações
+                            fornecidas estão corretas.
+
+                        </label>
+
+                    </fieldset>
+
+
+
+                    <!-- =========================
+                         BOTÕES
+                         ========================= -->
+
+                    <div class="form-buttons">
+
+                        <button type="submit">
+                            Enviar mensagem
+                        </button>
+
+
+                        <button type="reset">
+                            Limpar
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+         ========================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                Desenvolvido por Honey Macario — 2026
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
+
