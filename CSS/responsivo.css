@@ -1,1 +1,164 @@
+/* =====================================================
+   TABLET
+   ===================================================== */
 
+@media (min-width: 600px) {
+
+    .container {
+
+        width: 88%;
+    }
+
+
+    .hero-content {
+
+        grid-template-columns:
+            2fr 1fr;
+
+        align-items: center;
+    }
+
+
+    .about-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr 2fr;
+
+        align-items: start;
+    }
+
+
+    .footer-content {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* =====================================================
+   DESKTOP
+   ===================================================== */
+
+@media (min-width: 900px) {
+
+    .container {
+
+        width: 85%;
+    }
+
+
+    h1 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .hero {
+
+        padding: 7rem 0;
+    }
+
+
+    .about-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr 2fr;
+    }
+
+
+    .footer-content {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        align-items: start;
+    }
+
+
+    .copyright {
+
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+
+/* =====================================================
+   TELEMÓVEL
+   ===================================================== */
+
+@media (max-width: 599px) {
+
+    .header-content {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 1rem 0;
+    }
+
+
+    .nav-list {
+
+        justify-content: center;
+    }
+
+
+    .nav-list li > a {
+
+        padding:
+            0.5rem 0.6rem;
+
+        font-size: 0.85rem;
+    }
+
+
+    .hero {
+
+        padding: 3rem 0;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 2.5rem;
+    }
+
+
+    .page-intro {
+
+        padding: 3rem 0;
+    }
+
+
+    .intro-section,
+    .skills-section,
+    .about-section,
+    .table-section,
+    .portfolio-section,
+    .hobbies-section,
+    .contact-section {
+
+        padding: 3rem 0;
+    }
+
+}
